@@ -16,7 +16,8 @@ const knex = require('knex')({
     password : 'nics0303',
     database : 'facerecognition'
   }
-});
+});ls
+
 
 app.use(express.json());
 app.use(cors());
@@ -27,4 +28,4 @@ app.post('/signup', (req, res) => postSignUp(req, res, knex, bcrypt));
 app.get('/profile/:id', (req, res) => getProfile(req, res, knex));
 app.put('/image', (req, res) => putImage(req, res, knex));
 
-app.listen(port, () => console.log(`App listening on port: ${port}`));
+app.listen(process.env.PORT || port, () => console.log(`App listening on port: ${process.env.PORT}`));
