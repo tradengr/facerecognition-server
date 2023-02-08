@@ -10,11 +10,11 @@ const bcrypt = require('bcrypt-nodejs');
 const knex = require('knex')({
   client: 'pg',
   connection: {
-    host : '127.0.0.1',
+    host : 'dpg-cfhp5ccgqg40klj2rvmg-a',
     port : 5432,
     user : 'nics',
-    password : 'nics0303',
-    database : 'facerecognition'
+    password : 'Xk6gt07aLeHwNWSzW7bgjWelzlI3rSn5',
+    database : 'facerecognition_tyeu'
   }
 });
 
