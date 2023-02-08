@@ -16,7 +16,7 @@ const knex = require('knex')({
     password : 'nics0303',
     database : 'facerecognition'
   }
-});ls
+});
 
 
 app.use(express.json());
