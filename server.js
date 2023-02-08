@@ -22,7 +22,7 @@ const knex = require('knex')({
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req, res) => res.json(''));
+app.get('/', (req, res) => res.json('success'));
 app.post('/signin', postSignIn(knex, bcrypt));
 app.post('/signup', (req, res) => postSignUp(req, res, knex, bcrypt));
 app.get('/profile/:id', (req, res) => getProfile(req, res, knex));
